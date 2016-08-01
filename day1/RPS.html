@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Rock, Hello, Scissors</title>
+	</head>
+
+	<body>
+	</body>
+
+	<script>
+	
+		
+		var ans = prompt("Enter 'Rock', 'Paper', or 'Scissors'", "") 
+	
+		
+		if (ans != 'Rock' && ans != 'Paper' && ans != 'Scissors') {
+			alert("Bad input")
+		} else {
+		
+			var equate = 4;
+			if ( ans === 'Rock') {
+				equate = 0;
+			} else if (ans === 'Paper') {
+				equate = 1;
+			} else {
+				equate = 2;
+			}
+			
+			//alert(equate)
+			//console.log("equate: %s", 'equack')
+			console.log("equate: %s", equate)
+			
+			var num = Math.floor(Math.random() * 3);
+			
+			alert(num)
+			
+			
+			if (equate === num) {
+				alert("You win")
+			} else {
+				alert("you lost") 
+			}
+		
+		}
+			
+		
+		
+	</script>
+
+
+
+</html>
